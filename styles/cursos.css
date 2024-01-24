@@ -1,0 +1,118 @@
+.container-dos-cursos {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte-principal);
+}
+
+.card__curso,
+.card__chamada {
+    border-radius: 10px;
+    background: var(--color-barnco);
+    box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
+}
+
+.card__chamada {
+    background: var(--color-gradiente-principal);
+    border-radius: 10px;
+    padding: 2em;
+    margin: 1em;
+    margin-bottom: 1.5em;
+}
+
+.card__chamada h2 {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 32px;
+    color: var(--color-barnco);
+}
+
+.card__curso {
+    margin: 1em;
+    margin-bottom: 1.5em;
+    padding: 1.5em;
+    box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
+}
+
+.card__titulo {
+    color: var(--color-tags-title-button-footer);
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 1em;
+}
+
+.card__curso p {
+    color: var(--color-p);
+    font-weight: 500;
+    line-height: 26px;
+    margin: 1.5em 0;
+}
+
+.card__link {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    text-decoration: none;
+    color: var(--color-link-card);
+}
+
+.card__curso__imagem {
+    position: relative;
+    bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+    .container-dos-cursos {
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card__curso,
+    .card__chamada {
+        width: 339px;
+        height: 259px;
+        margin: 30px 10px;
+        padding: 10px;
+    }
+
+    .card__curso {
+        padding: 12px;
+    }
+
+    .card__curso__imagem {
+        bottom: 30px;
+        left: 20px;
+    }
+
+    .card__curso p {
+        width: 90%;
+    }
+
+    .card__chamada h2 {
+        padding-top: 32px;
+    }
+
+    .card__titulo,
+    .card__curso p,
+    .card__link {
+        padding-left: 1em;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container-dos-cursos {
+        margin-bottom: 7em;
+    }
+
+    .card__chamada h2 {
+        font-size: 32px;
+        width: 90%;
+        padding-left: 0.5em;
+    }
+
+    .card__titulo,
+    .card__curso p,
+    .card__link {
+        padding-left: 1em;
+    }
+}

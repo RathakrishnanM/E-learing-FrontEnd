@@ -1,0 +1,126 @@
+/*Area header*/
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.cabecalho__titulo {
+    color: var(--color-tags-title-button-footer);
+    font-family: var(--fonte-principal);
+    font-weight: 800;
+    font-size: 28px;
+}
+
+.cabecalho__link {
+    background: var(--color-tags-title-button-footer);
+    font-family: var(--fonte-principal);
+    border-radius: 28px;
+    font-weight: 700;
+    padding: 1em 1.5em;
+    text-align: center;
+}
+
+.cabecalho__link:hover {
+    background-color: var(--color-hover-button-header);
+}
+
+/* Area banner hero */
+
+.banner {
+    padding: 1em;
+}
+
+.banner__titulo {
+    color: var(--color-tags-title-button-footer);
+    font-family: var(--fonte-principal);
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.banner__titulo,
+.banner__texto {
+    margin: 0.5em 0;
+}
+
+.banner__texto {
+    font-family: var(--fonte-principal);
+    color: var(--color-p);
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 2em;
+}
+
+.link__hero {
+    background: var(--color-gradiente-principal);
+    font-family: var(--fonte-principal);
+    border-radius: 31.5px;
+    font-weight: 700;
+    padding: 1em 2em;
+    width: 110px;
+    text-align: center;
+}
+
+.link__hero:hover {
+    background: var(--color-hover-botoao-hero);
+}
+
+@media screen and (min-width: 768px) {
+    .container__midia {
+        display: flex;
+        align-items: center;
+        margin-bottom: 4em;
+        background: url("../img/Rectangle.svg") no-repeat;
+        background-size: 40%;
+        background-position: right -7em;
+    }
+
+    .banner__titulo {
+        width: 80%;
+        margin: 1em 0 0.6em 0;
+    }
+
+    .banner__texto {
+        width: 80%;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .cabecalho {
+        padding: 1em 6.5em;
+    }
+
+    .cabecalho__titulo {
+        font-size: 36px;
+    }
+
+    .cabecalho__link {
+        font-size: 18px;
+    }
+
+    .container__midia {
+        padding: 0 6.5em;
+    }
+
+    .banner {
+        padding: 0;
+    }
+
+    .banner__titulo {
+        font-size: 56px;
+        width: 60%;
+    }
+
+    .banner__texto {
+        font-size: 18px;
+        width: 55%;
+        margin-bottom: 4em;
+    }
+
+    .container__midia {
+        background-size: 30%;
+        background-position: right -200px;
+    }
+}
